@@ -1,0 +1,169 @@
+/* All index.html styling will be in this file -> {index.css }*/
+/* Utilities */
+.light-grey{
+    color: #5d5d5a;
+}
+.color-red{
+    color: #ff5959;
+}
+.pad-top30{
+    padding-top: 30px;
+}
+.font-sz{
+    font-size: 34px;
+    font-family: 'Pacifico', cursive;
+    color: #ff5959;
+}
+/* Header styling starts here... */
+header{
+    width: 100%;
+    height: 71px;
+    position: fixed;
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+header .header-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header .header-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .header-logo{
+    margin-top: 5px;
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: #ff5959;
+}
+
+header .header-container .shopping-navbar{
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+header .header-container .shopping-navbar span{
+    margin-left: 30px;
+}
+
+header .header-container .shopping-navbar > img{
+    width: 25px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+header .header-container .shopping-list{
+    width: 560px;
+    height: 53px;
+    margin-left: 40px;
+    background: #FFFFFF;
+    border: 1px solid rgba(238, 238, 238, 0.63);
+    border-radius: 5px;
+    padding: 11.5px 10px;
+}
+
+header .header-container .shopping-list select{
+    width: 50px;
+    height: 30px;
+    background-color: #eeeeee;
+}
+
+header .shopping-search #search{
+    width: 400px;
+    border: none;
+    margin-left: 30px;
+    outline: none;
+}
+
+header .shopping-search > img{
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+header .header-container > button{
+    width: 100px;
+    height: 40px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ff5959;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+header .header-container > button:hover{
+    background-color: #fd3d3d;
+}
+/* Header styling ends here... */
+
+/* Banner section starts here... */
+.banner-container{
+    padding-top: 100px;
+}
+
+.banner-container .topslides{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner-container .banner-text > h1{
+    font-size: 54px;
+    font-weight: lighter;
+    margin-top: 70px;
+}
+.banner-container .banner-text span{
+    color: #ff5959;
+}
+.banner-container .banner-text .btn-shop_now{
+    background-color: #ff5959;
+    color: #FFFFFF;
+    border: none;
+    width: 159px;
+    height: 43px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.banner-container .banner-text .btn-shop_now:hover{
+    background-color: #fd3d3d;
+}
+.banner-container .banner-images > img{
+    width: 467px;
+    height: 314px;
+    border-radius: 10px;
+}
+/* Banner section ends here... */
+/* Collections */
+.collections{
+    margin-top: 60px;
+}
+.collections .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.collections .cards{
+    width: 261px;
+    height: 265px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+}
+.collections .cards .card-name{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-weight: bold;
+}
+/* end of collections */
+
+
+
