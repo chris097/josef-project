@@ -1,7 +1,20 @@
 /* All index.html styling will be in this file -> {index.css }*/
 /* Utilities */
+.text-center{
+    text-align: center;
+    justify-content: center;
+}
 .light-grey{
     color: #5d5d5a;
+}
+.images{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .color-red{
     color: #ff5959;
@@ -9,10 +22,27 @@
 .pad-top30{
     padding-top: 30px;
 }
+.mgrt30{
+    margin-right: 30px;
+}
 .font-sz{
     font-size: 34px;
     font-family: 'Pacifico', cursive;
     color: #ff5959;
+}
+.ibutton{
+    background-color: #ff5959;
+    color: #FFFFFF;
+    border: none;
+    width: 159px;
+    height: 39px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 15px;
+    outline: none;
+}
+.ibutton:hover{
+    background-color: #fd3d3d;
 }
 /* Header styling starts here... */
 header{
@@ -23,6 +53,7 @@ header{
     font-family: 'Roboto', sans-serif;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
+    z-index: 555;
 }
 
 header .header-container{
@@ -56,6 +87,29 @@ header .header-container .shopping-navbar > img{
     width: 25px;
     margin-top: 3px;
     position: absolute;
+}
+
+header .header-container .shopping-navbar .nav-link{
+    background-color: #FFFFFF;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -20px;
+    display: none;
+}
+
+header .header-container .shopping-navbar .nav-link li{
+    list-style: none;
+}
+
+header .header-container .shopping-navbar .nav-link a{
+    text-decoration: none;
+    color: #5d5d5a;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+header .header-container .shopping-navbar .nav-link a:hover{
+    color: #ff5959;
 }
 
 header .header-container .shopping-list{
@@ -157,6 +211,10 @@ header .header-container > button:hover{
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.11);
     border-radius: 10px;
 }
+.collections .cards:hover{
+    transform: scale(1.06);
+    transition: all 1s ease-in-out;
+}
 .collections .cards .card-name{
     display: flex;
     justify-content: space-between;
@@ -165,5 +223,122 @@ header .header-container > button:hover{
 }
 /* end of collections */
 
+/* Modals */
 
+/* shopping cart modal start here */
+.zoom-out{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    z-index: 999;
+    opacity: .6;
+    display: none;
+}
+.shopping-cart_modal{
+    width: 350px;
+    height: 500px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border-radius: 7px;
+    display: none;
+}
+.shopping-cart_modal .shopping-cart_container{
+    text-align: center;
+    justify-content: center;
+    line-height: .4;
+    padding-top: 40px;
+}
+.shopping-cart_modal .shopping-cart_container > img{
+    width: 350px;
+    height: 250px;
+} 
+.shopping-cart_modal .shopping-cart_container .description{
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.2;
+}
+.remove-cart_modal,
+.remove-login_modal{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+.remove-cart_modal:hover,
+.remove-login_modal:hover{
+    color: #fd3d3d;
+}
+/* shopping cart modal end here */
+/* login starts here... */
+.shop-login{
+    width: 350px;
+    height: 300px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border-radius: 7px;
+    padding: 10px;
+    display: none;
+}
+.shop-login .shop-login_logo{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    color: #ff5959;
+}
+.form div input{
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+}
+.form button{
+    width: 100%;
+    height: 45px;
+    background-color: #ff5959;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 20px;
+    outline: none;
+    border-radius: 5px;
+}
+.form button a{
+    color: #FFFFFF;
+    font-size: 15px;
+    text-decoration: none;
+}
+.form button:hover{
+    background-color: #fd3d3d;
+}
+/* login ends here... */
+.footer{
+    border-top: 1px solid #ccc;
+    margin-top: 100px;
+    height: 100px;
+    padding-top: 25px;
+    color: #5d5d5a;
+    font-size: 13px;
+}
+.footer .footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: #ff5959;
+}
 
