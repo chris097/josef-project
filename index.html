@@ -14,7 +14,8 @@
                 <div class="header-content">
                     <div class="header-logo">ShopNow</div>
                     <div class="shopping-navbar">
-                        <img src="./assests/icons/menu.svg" alt="menu-icon">
+                        <img src="./assests/icons/menu.svg" alt="menu-icon" class="menu">
+                        <img src="./assests/icons/cancel.svg" alt="" class="close">
                         <span>Shop</span>
                         <ul class="nav-link">
                             <li><a href="">About Us</a></li>
@@ -39,31 +40,15 @@
             </div> 
         </div>
     </header>
-    <!-- Shopping cart Modal starts here... -->
-    <div class="zoom-out"></div>
-        <div class="shopping-cart_modal">
-            <div class="remove-cart_modal">X</div>
-            <div class="shopping-cart_container">
-                <img src="./assests/images/lap1.svg" alt="lap1">
-                <h3>Macbook Pro 2019</h3>
-                <p>Laptop for smart people</p>
-                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, at unde quaerat vitae laboriosam, hic vel sunt
-                    ullam adipisci nam repellendus nostrum repudiandae a similique!
-                </div>
-                <button class="ibutton">Add to Cart</button>
-            </div>
-        </div>
-    <!-- Shopping cart Modal ends here... -->
-
     <!-- Login start here -->
     <div class="zoom-out"></div>
     <div class="shop-login">
         <div class="remove-login_modal">X</div>
         <div class="shop-login_logo">ShopNow</div>
-        <form action="" class="form">
-           <div><input type="text" id="name" placeholder="Enter your Name"></div>
-           <div><input type="email" id="email" placeholder="Enter your Email"></div>
-           <button type="submit"><a href="home.html">Log In</a></button>
+        <form action="home.html" class="form">
+           <div><input type="text" id="name" placeholder="Enter your Name" value="" required="true"></div>
+           <div><input type="email" id="email" placeholder="Enter your Email" required="true"></div>
+           <button type="submit">Log In</button>
         </form>
     </div>
     <!-- Login ends here -->
@@ -90,27 +75,48 @@
     <!-- This section ends here... -->
     <section class="container">
         <div class="collections pad-top30" id="men">
-            <h1 class="font-sz">Men's Collections</h1>
+            <h1 class="font-sz">Men's Collection</h1>
             <div class="card-container">
                 <div class="cards">
-                    <img src="https://media.istockphoto.com/photos/young-stylish-businessman-front-rear-side-view-isolated-picture-id936278632?k=6&m=936278632&s=612x612&w=0&h=NdlScxD4EBP8Ogl4kYjho9_E_kJgGenFfYGialUET0E=" alt="Laptop" class="images" >
+                    <img src="https://media.istockphoto.com/photos/young-stylish-businessman-front-rear-side-view-isolated-picture-id936278632?k=6&m=936278632&s=612x612&w=0&h=NdlScxD4EBP8Ogl4kYjho9_E_kJgGenFfYGialUET0E=" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>Men Suit</p>
+                        <p>London Suit</p>
                         <p>N25,000</p>
+                    </div>
+                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
+                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
+                          Flat lay, top view clothes. Female fashion blog or social media
+                    </p>
+                    <div class="text-center">
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="https://media.istockphoto.com/photos/mens-clothing-isolated-on-white-background-picture-id984324980?k=6&m=984324980&s=612x612&w=0&h=6UUF_-kOGzVzHIBhA4F7MURA_c5V3E53NauCav5zMSk=" alt="Laptop" class="images">
+                    <img src="https://media.istockphoto.com/photos/mens-clothing-isolated-on-white-background-picture-id984324980?k=6&m=984324980&s=612x612&w=0&h=6UUF_-kOGzVzHIBhA4F7MURA_c5V3E53NauCav5zMSk="alt="Laptop" class="images">
                     <div class="card-name">
                         <p>Joggers</p>
                         <p>N25,000</p>
+                    </div>
+                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
+                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
+                          Flat lay, top view clothes. Female fashion blog or social media
+                    </p>
+                    <div class="text-center">
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
                     <img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w&=940" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>Blue geans</p>
+                        <p>Blue Geans</p>
                         <p>N25,000</p>
+                    </div>
+                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
+                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
+                          Flat lay, top view clothes. Female fashion blog or social media
+                    </p>
+                    <div class="text-center">
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
@@ -119,39 +125,74 @@
                         <p>T-Shirt</p>
                         <p>N25,000</p>
                     </div>
+                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
+                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
+                          Flat lay, top view clothes. Female fashion blog or social media
+                    </p>
+                    <div class="text-center">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
                 </div>
             </div>
             <!-- <button>Show Now</button> -->
         </div>
         <div class="collections" id="women">
-            <h1 class="font-sz">Women's Collections</h1>
+            <h1 class="font-sz">Women's Collection</h1>
             <div class="card-container">
                 <div class="cards">
-                    <img src="./assests/images/lap1.svg" alt="Laptop">
+                    <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>Macbook Air</p>
+                        <p>Striped blouse</p>
                         <p>N25,000</p>
+                    </div>
+                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
+                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
+                          Flat lay, top view clothes. Female fashion blog or social media
+                    </p>
+                    <div class="text-center">
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="./assests/images/lap2.svg" alt="Laptop">
+                    <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>Macbook Air</p>
+                        <p>Striped blouse</p>
                         <p>N25,000</p>
+                    </div>
+                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
+                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
+                          Flat lay, top view clothes. Female fashion blog or social media
+                    </p>
+                    <div class="text-center">
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
-                    
+                    <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>Suit</p>
+                        <p>Striped blouse</p>
                         <p>N25,000</p>
+                    </div>
+                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
+                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
+                          Flat lay, top view clothes. Female fashion blog or social media
+                    </p>
+                    <div class="text-center">
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="./assests/images/lap1.svg" alt="Laptop">
+                    <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p class="light-grey">Macbook Air</p>
-                        <p class="color-red">N25,000</p>
+                        <p>Striped blouse</p>
+                        <p>N25,000</p>
+                    </div>
+                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
+                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
+                          Flat lay, top view clothes. Female fashion blog or social media
+                    </p>
+                    <div class="text-center">
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -173,5 +214,6 @@
         </div>
     </footer>
 </body>
-<script type="module" src="./assests/js/index.js"></script>
+<script src="./assests/js/index.js"></script>
+<script src="./assests/js/auth.js"></script>
 </html>
