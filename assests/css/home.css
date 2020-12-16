@@ -10,10 +10,10 @@
     padding: 0 20px;
 }
 .mgrt-70{
-    margin-right: 70px;
+    margin-right: 60px;
 }
 .mglf-44{
-    margin-left: 44px;
+    margin-left: 90px;
 }
 .mgtop-20{
     margin-top: 20px;
@@ -23,10 +23,15 @@
     position: absolute;
     top: 71.5px;
     right: 50px;
-    width: 350px;
+    width: 385px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
     padding: 0 15px;
     display: none;
+}
+
+.shopping-items{
+    height: 200px;
+    overflow-y: auto;
 }
 
 .cart-logo{
@@ -51,6 +56,10 @@
     top: 5px;
     width: 15px;
     height: 15px;
+}
+
+.shopping-items{
+    margin-top: 10px;
 }
 
 .cart-logout{
@@ -85,21 +94,23 @@
 }
 .quality input{
     width: 30px;
-    margin-right: 10px;
 }
-.item span{
+.item{
+    display: flex;
+}
+.item p{
+    width: 78px;
     font-size: 12px;
-    position: absolute;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 .quality{
-    margin-left: 40px;
     margin-top: 14px;
 }
 .price{
+    font-size: 13px;
     margin-top: 5px;
-    margin-left: 70px;
+    /* margin-left: 20px; */
 }
 .remove-item button{
     width: 60px;
@@ -109,6 +120,7 @@
     outline: none;
     padding: 5px;
     border-radius: 5px;
+    margin-left: 20px;
 }
 .remove-item button:hover{
     background-color: #fd3d3d

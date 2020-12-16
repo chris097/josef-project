@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josef shopping cart project</title>
     <link rel="stylesheet" href="./assests/css/style.css">
+    <script src="./assests/js/cart.js" async></script>
 </head>
 <body>
     <!-- Header start from here. -->
@@ -45,34 +46,21 @@
                             <p class="fnsz13 mglf-44">Price</p>
                             <p class="fnsz13 mgrt-70">Quality</p>
                         </div>
-                         <div class="column shopping-items">
-                            <div class="item">
-                                <img src="./assests/images/img1.svg" alt="" class="cart-img">
-                                <span>T-Shirt</span>
-                            </div>
-                            <div class="price">
-                                <p class="fnsz13">$50</p>
-                            </div>
-                            <div class="quality">
-                                <input type="number" id="" value="2">
-                                <span class="remove-item">
-                                    <button type="submit">Remove</button>
-                                </span>
-                            </div>
-                        </div>
-                         <div class="column shopping-items">
-                            <div class="item">
-                                <img src="./assests/images/img1.svg" alt="" class="cart-img">
-                                <span>T-Shirt</span>
-                            </div>
-                            <div class="price">
-                                <p class="fnsz13">$50</p>
-                            </div>
-                            <div class="quality">
-                                <input type="number" id="" value="2">
-                                <span class="remove-item">
-                                    <button type="submit">Remove</button>
-                                </span>
+                         <div class="shopping-items">
+                            <div>
+                                <!-- <div class="item">
+                                    <img src="./assests/images/img1.svg" alt="" class="cart-img">
+                                    <span>T-Shirt</span>
+                                </div>
+                                <div class="price">
+                                    <p class="fnsz13">$50</p>
+                                </div>
+                                <div class="quality">
+                                    <input type="number" id="" value="2">
+                                    <span class="remove-item">
+                                        <button type="button">Remove</button>
+                                    </span>
+                                </div> -->
                             </div>
                         </div>
                         <div class="column total">
@@ -125,8 +113,8 @@
                 <div class="cards">
                     <img src="https://media.istockphoto.com/photos/young-stylish-businessman-front-rear-side-view-isolated-picture-id936278632?k=6&m=936278632&s=612x612&w=0&h=NdlScxD4EBP8Ogl4kYjho9_E_kJgGenFfYGialUET0E=" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>London Suit</p>
-                        <p>N25,000</p>
+                        <p class="title">London Suit</p>
+                        <p class="price">$5,000</p>
                     </div>
                     <p class="description">Feminine summer fashion composition: striped blouse, slippers,
                          bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
@@ -139,8 +127,8 @@
                 <div class="cards">
                     <img src="https://media.istockphoto.com/photos/mens-clothing-isolated-on-white-background-picture-id984324980?k=6&m=984324980&s=612x612&w=0&h=6UUF_-kOGzVzHIBhA4F7MURA_c5V3E53NauCav5zMSk="alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>Joggers</p>
-                        <p>N25,000</p>
+                        <p class="title">Joggers</p>
+                        <p class="price">$5,000</p>
                     </div>
                     <p class="description">Feminine summer fashion composition: striped blouse, slippers,
                          bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
@@ -153,8 +141,8 @@
                 <div class="cards">
                     <img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w&=940" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>Blue Geans</p>
-                        <p>N25,000</p>
+                        <p class="title">Blue Geans</p>
+                        <p class="price">$5,000</p>
                     </div>
                     <p class="description">Feminine summer fashion composition: striped blouse, slippers,
                          bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
@@ -167,8 +155,8 @@
                 <div class="cards">
                     <img src="https://media.istockphoto.com/photos/white-tshirt-front-and-back-isolated-on-white-background-picture-id694412924?k=6&m=694412924&s=612x612&w=0&h=BTmVgS2ewlwb7DxjmQf07M-0MUbrEn01AzmFDRzRDsc=" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>T-Shirt</p>
-                        <p>N25,000</p>
+                        <p class="title">T-Shirt</p>
+                        <p class="price">$5,000</p>
                     </div>
                     <p class="description">Feminine summer fashion composition: striped blouse, slippers,
                          bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
@@ -187,8 +175,8 @@
                 <div class="cards">
                     <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>Striped blouse</p>
-                        <p>N25,000</p>
+                        <p class="title">Striped blouse</p>
+                        <p class="price">$5,000</p>
                     </div>
                     <p class="description">Feminine summer fashion composition: striped blouse, slippers,
                          bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
@@ -201,8 +189,8 @@
                 <div class="cards">
                     <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>Striped blouse</p>
-                        <p>N25,000</p>
+                        <p class="title">Striped blouse</p>
+                        <p class="price">$5,000</p>
                     </div>
                     <p class="description">Feminine summer fashion composition: striped blouse, slippers,
                          bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
@@ -215,8 +203,8 @@
                 <div class="cards">
                     <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>Striped blouse</p>
-                        <p>N25,000</p>
+                        <p class="title">Striped blouse</p>
+                        <p class="price">$5,000</p>
                     </div>
                     <p class="description">Feminine summer fashion composition: striped blouse, slippers,
                          bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
@@ -229,8 +217,8 @@
                 <div class="cards">
                     <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p>Striped blouse</p>
-                        <p>N25,000</p>
+                        <p class="title">Striped blouse</p>
+                        <p class="price">$5,000</p>
                     </div>
                     <p class="description">Feminine summer fashion composition: striped blouse, slippers,
                          bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
