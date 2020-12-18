@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josef shopping cart project</title>
     <link rel="stylesheet" href="./assests/css/style.css">
-    <script src="./assests/js/cart.js" async></script>
 </head>
 <body>
     <!-- Header start from here. -->
@@ -19,10 +18,11 @@
                         <img src="./assests/icons/cancel.svg" alt="menu-icon" class="close">
                         <span>Shop</span>
                         <ul class="nav-link">
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Contact Us</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                             <li><a href="#men">Men Collections</a></li>
                             <li><a href="#women">Women Collections</a></li>
+                            <li><a href="index.html">Log Out</a></li>
                         </ul>
                     </div>
                     <div class="shopping-list">
@@ -47,28 +47,43 @@
                             <p class="fnsz13 mgrt-70">Quality</p>
                         </div>
                          <div class="shopping-items">
-                            <div>
-                                <!-- <div class="item">
+                            <!-- <div class="shopping-content">
+                                <div class="item">
                                     <img src="./assests/images/img1.svg" alt="" class="cart-img">
                                     <span>T-Shirt</span>
                                 </div>
                                 <div class="price">
-                                    <p class="fnsz13">$50</p>
+                                    <p class="fnsz13 cart-price">$150</p>
                                 </div>
                                 <div class="quality">
-                                    <input type="number" id="" value="2">
+                                    <input class="quality-cart" type="number" id="" value="1">
                                     <span class="remove-item">
                                         <button type="button">Remove</button>
                                     </span>
-                                </div> -->
+                                </div>
                             </div>
+                            <div class="shopping-content">
+                                <div class="item">
+                                    <img src="./assests/images/img1.svg" alt="" class="cart-img">
+                                    <span>T-Shirt</span>
+                                </div>
+                                <div class="price">
+                                    <p class="fnsz13 cart-price">$150</p>
+                                </div>
+                                <div class="quality">
+                                    <input class="quality-cart" type="number" id="" value="1">
+                                    <span class="remove-item">
+                                        <button type="button">Remove</button>
+                                    </span>
+                                </div>
+                            </div> -->
                         </div>
                         <div class="column total">
                             <p>Total</p>
-                            <p>$100</p>
+                            <p class="cart-total">$0</p>
                         </div>
                         <button type="submit" class="cart-pay">Pay</a></button>
-                        <button type="submit" class="cart-logout"><a href="index.html">Log Out</a></button>
+                        <button type="submit" class="cart-logout">Clear Cart</button>
                     </div>
             </div> 
         </div>
@@ -114,11 +129,9 @@
                     <img src="https://media.istockphoto.com/photos/young-stylish-businessman-front-rear-side-view-isolated-picture-id936278632?k=6&m=936278632&s=612x612&w=0&h=NdlScxD4EBP8Ogl4kYjho9_E_kJgGenFfYGialUET0E=" alt="Laptop" class="images">
                     <div class="card-name">
                         <p class="title">London Suit</p>
-                        <p class="price">$5,000</p>
+                        <p class="price">$5000</p>
                     </div>
-                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
-                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
-                          Flat lay, top view clothes. Female fashion blog or social media
+                    <p class="description">Young stylish businessman front rear side view, isolated on white
                     </p>
                     <div class="text-center">
                         <button class="add-to-cart">Add to Cart</button>
@@ -128,11 +141,10 @@
                     <img src="https://media.istockphoto.com/photos/mens-clothing-isolated-on-white-background-picture-id984324980?k=6&m=984324980&s=612x612&w=0&h=6UUF_-kOGzVzHIBhA4F7MURA_c5V3E53NauCav5zMSk="alt="Laptop" class="images">
                     <div class="card-name">
                         <p class="title">Joggers</p>
-                        <p class="price">$5,000</p>
+                        <p class="price">$5000</p>
                     </div>
-                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
-                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
-                          Flat lay, top view clothes. Female fashion blog or social media
+                    <p class="description">Smiling young man using tablet computer. Attractive guy wearing glasses, browsing on
+                         tablet and looking at camera. Technology concept. Isolated front view on white background.
                     </p>
                     <div class="text-center">
                         <button class="add-to-cart">Add to Cart</button>
@@ -142,11 +154,10 @@
                     <img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w&=940" alt="Laptop" class="images">
                     <div class="card-name">
                         <p class="title">Blue Geans</p>
-                        <p class="price">$5,000</p>
+                        <p class="price">$5000</p>
                     </div>
-                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
-                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
-                          Flat lay, top view clothes. Female fashion blog or social media
+                    <p class="description">
+                        Man with blue geans and white sneaker shoes in stair, go up. Selective focus
                     </p>
                     <div class="text-center">
                         <button class="add-to-cart">Add to Cart</button>
@@ -156,11 +167,9 @@
                     <img src="https://media.istockphoto.com/photos/white-tshirt-front-and-back-isolated-on-white-background-picture-id694412924?k=6&m=694412924&s=612x612&w=0&h=BTmVgS2ewlwb7DxjmQf07M-0MUbrEn01AzmFDRzRDsc=" alt="Laptop" class="images">
                     <div class="card-name">
                         <p class="title">T-Shirt</p>
-                        <p class="price">$5,000</p>
+                        <p class="price">$5000</p>
                     </div>
-                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
-                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
-                          Flat lay, top view clothes. Female fashion blog or social media
+                    <p class="description">Top view of color T-Shirt on grey wood plank background
                     </p>
                     <div class="text-center">
                         <button class="add-to-cart">Add to Cart</button>
@@ -176,7 +185,7 @@
                     <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
                     <div class="card-name">
                         <p class="title">Striped blouse</p>
-                        <p class="price">$5,000</p>
+                        <p class="price">$5000</p>
                     </div>
                     <p class="description">Feminine summer fashion composition: striped blouse, slippers,
                          bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
@@ -187,42 +196,38 @@
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
+                    <img src="https://media.istockphoto.com/photos/family-doing-laundry-at-home-picture-id957387872" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p class="title">Striped blouse</p>
-                        <p class="price">$5,000</p>
+                        <p class="title">W-Polos</p>
+                        <p class="price">$5000</p>
                     </div>
-                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
-                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
-                          Flat lay, top view clothes. Female fashion blog or social media
+                    <p class="description">Beautiful young woman and child girl little helper 
+                        are having fun and smiling while doing laundry at home.
                     </p>
                     <div class="text-center">
                         <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
+                    <img src="https://media.istockphoto.com/photos/happy-businesswoman-in-formal-clothing-picture-id1158860092?k=6&m=1158860092&s=612x612&w=0&h=8Bvt8w6MTm0OqvXcW5DtOrLt-25ghyViVsxJbkWhk2Y=" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p class="title">Striped blouse</p>
-                        <p class="price">$5,000</p>
+                        <p class="title">W-suit</p>
+                        <p class="price">$5000</p>
                     </div>
-                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
-                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
-                          Flat lay, top view clothes. Female fashion blog or social media
+                    <p class="description">Cheerful African American business woman in black suit with 
+                        curly hair looking away isolated against gray background
                     </p>
                     <div class="text-center">
                         <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="cards">
-                    <img src="https://media.istockphoto.com/photos/female-fashion-clothes-flat-lay-square-picture-id1160533209" alt="Laptop" class="images">
+                    <img src="https://media.istockphoto.com/photos/flat-lay-shot-of-female-holiday-clothing-and-accessories-picture-id695474474" alt="Laptop" class="images">
                     <div class="card-name">
-                        <p class="title">Striped blouse</p>
-                        <p class="price">$5,000</p>
+                        <p class="title">White blouse</p>
+                        <p class="price">$5000</p>
                     </div>
-                    <p class="description">Feminine summer fashion composition: striped blouse, slippers,
-                         bag, sunglasses, watch, perfume, jeans, palm leaf on white background.
-                          Flat lay, top view clothes. Female fashion blog or social media
+                    <p class="description">Flat Lay Shot Of Female Holiday Clothing And Accessories
                     </p>
                     <div class="text-center">
                         <button class="add-to-cart">Add to Cart</button>
@@ -248,4 +253,5 @@
     </footer>
 </body>
 <script src="./assests/js/UI.js"></script>
+<script type="text/javascript" src="./assests/js/cart.js"></script>
 </html>

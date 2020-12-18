@@ -105,6 +105,8 @@ header .header-container .shopping-navbar > .close{
 }
 
 header .header-container .shopping-navbar .nav-link{
+    width: 200px;
+    height: 200px;
     background-color: #FFFFFF;
     position: absolute;
     margin-top: 20px;
@@ -190,6 +192,8 @@ header .header-container > button:hover{
     font-weight: lighter;
     margin-top: 70px;
 }
+
+
 .banner-container .banner-text span{
     color: #ff5959;
 }
@@ -226,7 +230,11 @@ header .header-container > button:hover{
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.11);
     border-radius: 10px;
 }
+.collections .cards .price{
+    margin-top: 18px;
+}
 .collections .cards .description{
+    height: 90px;
     font-size: 12px;
     color: #333;
     text-align: center;
@@ -293,6 +301,10 @@ header .header-container > button:hover{
     font-family: 'Pacifico', cursive;
     color: #ff5959;
 }
+.shop-login .remove-login_modal{
+    position: absolute;
+    right: 20px;
+}
 .form div input{
     width: 100%;
     height: 45px;
@@ -337,5 +349,31 @@ header .header-container > button:hover{
     font-family: 'Pacifico', cursive;
     font-size: 24px;
     color: #ff5959;
+}
+
+@media screen and (max-width: 400px){
+    header .header-container .shopping-list ,
+    header .shopping-search{
+        display: none;
+    }
+
+    header .header-container > button{
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+
+    .banner-container .banner-text > h1{
+        font-size: 30px;
+        line-height: none;
+    }
+    .banner-container{
+        padding-top: 40px;
+    }
+    .collections .cards{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+    }
 }
 

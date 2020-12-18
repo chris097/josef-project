@@ -43,6 +43,9 @@ function cartEvent (UIClass){
      
      const displayShoppingCart =() => {
         UIController(inputBtn.shoppingCart, inputBtn.block)
+        UIController(inputBtn.navLink, inputBtn.none)
+        UIController(inputBtn.menu, inputBtn.block)
+        UIController(inputBtn.close, inputBtn.none)
      }
      const removeShoppingCart =() => {
         UIController(inputBtn.shoppingCart, inputBtn.none)
@@ -51,6 +54,7 @@ function cartEvent (UIClass){
         UIController(inputBtn.navLink, inputBtn.block)
         UIController(inputBtn.close, inputBtn.block)
         UIController(inputBtn.menu, inputBtn.none)
+        UIController(inputBtn.shoppingCart, inputBtn.none)
     }
      const closeNav = () => {
         UIController(inputBtn.navLink, inputBtn.none)
