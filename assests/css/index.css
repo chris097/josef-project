@@ -356,6 +356,9 @@ header .header-container > button:hover{
     header .shopping-search{
         display: none;
     }
+    header .header-container .shopping-navbar{
+        margin-left: 15px;
+    }
 
     header .header-container > button{
         position: absolute;
@@ -369,6 +372,9 @@ header .header-container > button:hover{
     }
     .banner-container{
         padding-top: 40px;
+    }
+    .banner-container .banner-images > img{
+        width: 97%;
     }
     .collections .cards{
         flex-direction: column;
